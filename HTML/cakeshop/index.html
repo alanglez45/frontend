@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop Bizcocho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="barra-nav">
+            <div class="logo">
+                <img src="img/sinfondo.png" alt="logotipo pasteleria">
+            </div>
+            <nav>
+                <div class="menu-hb">
+                    <a href="#"><img src="img/hamburger.png" alt="menu hamburguesa"></a>
+                </div>
+                <div class="menu-mb">
+                    <div class="btn-cerrar">
+                        <a href="#"><img src="img/close.png" alt="icono-cerrar"></a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#orders">Order</a></li>
+                        <li><a href="pastelero.html">Baker</a></li>
+                    </ul>
+                </div>
+                <div class="desk">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#orders">Order</a></li>
+                        <li><a href="pastelero.html">Baker</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="texto-header">
+            <h1>Cake Shop Bizcocho</h1>
+            <p>Welcome, Bizcocho!!!</p>
+            <p>This is the place where your dreams do come true.</p>
+        </div>
+    </header>
+
+    <div class="bg-color">
+        <main class="productos" id="products">
+            <div>
+                <h3>Cakes</h3>
+                <div class="cakes">
+                    <div class="cake">
+                        <img src="img/chocolate.jpeg" alt="pastel de chocolate">
+                        <p class="cake-flavor">Chocolate Cake</p>
+                        <p class="price">$30.00</p>
+                    </div>
+                    <div class="cake">
+                        <img src="img/fresa.jpeg" alt="pastel de fresa">
+                        <p class="cake-flavor">Strawberry Cake</p>
+                        <p class="price">$30.00</p>
+                    </div>
+                    <div class="cake">
+                        <img src="img/3 leches.png" alt="pastel de 3 leches">
+                        <p class="cake-flavor">Milk Cake</p>
+                        <p class="price">$30.00</p>
+                    </div>
+                </div>
+                <p class="note">Note: You can add more flavors to your cake.</p>
+            </div>
+            <div>
+                <h3>Cake Toppers</h3>
+                <div class="cakes">
+                    <div class="cake">
+                        <img src="img/baptism.jpg" alt="Baptism topper">
+                        <p class="cake-flavor">Baptism Topper</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="cake">
+                        <img src="img/boda.jpg" alt="Wedding topper">
+                        <p class="cake-flavor">Wedding Topper</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="cake">
+                        <img src="img/hb.jpg" alt="pastel de 3 leches">
+                        <p class="cake-flavor">Birthday Topper</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <section class="order" id="orders">
+        <form action="">
+            <fieldset>
+                <legend>Place your order</legend>
+                <div class="grid">
+                    <div class="card">
+                        <h4>Choose your cake flavor(s)</h4>
+                        <div class="container-ch">
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Chocolate</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Strawberry</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Milk</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Vanilla</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Cheese</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Banana</label>
+                            </div>
+                        </div>
+                        <p class="note">Note: You can make flavors combinations. <br>
+                            Extra flavor + $10.00
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Choose your cake topper(s)</h4>
+                        <div class="container-ch">
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Baptism Topper</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Wedding Topper</label>
+                            </div>
+                            <div class="field">
+                                <input type="checkbox">
+                                <label for="#">Birthday Topper</label>
+                            </div>
+                        </div>
+                        <p class="note">Note: You can choose moren than one.</p>
+                    </div>
+                </div>
+
+                <div class="card mt">
+                    <h4>Shipping Information</h4>
+                    <div class="container">
+                        <div class="">
+                            <label for="#">Name:</label>
+                            <input type="text" placeholder="Type your name">
+                        </div>
+                        <div class="">
+                            <label for="#">Phone Number:</label>
+                            <input type="tel" placeholder="Type your phone number">
+                        </div>
+                        <div class="">
+                            <label for="#">E-mail:</label>
+                            <input type="email" placeholder="email@email.com">
+                        </div>
+                        <div class="">
+                            <label for="#">Cake's Description:</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <input class="btn-submit" type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p class="title">Contact Us</p>
+        <div class="center">
+            <div>
+                <p>Blvrd Puerta de Hierro #5153</p>
+                <p>Puerta de Hierro, 45116 Zapopan, Jal.</p>
+            </div>
+            <div>
+                <p>Phone: 33 4350 1616</p>
+                <p>Mon - Fri: 10:00 - 20:00</p>
+                <p>Sat - Sun: 10:00 - 13:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+
+</body>
+
+</html>
