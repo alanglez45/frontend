@@ -1,0 +1,281 @@
+:root {
+    --primary-color: #BD0E34;
+    --secondary-color: #CE1231;
+    --primary-color: #BD0E34;
+    --black-color: #000000;
+    --gray-color: #c3c3c3;
+    --white-color: #ffffff;
+    --green-color: #8ADB53;
+    --green-darker: #5daa2a;
+    --yellow-color: #FFC703;
+    --primary-font: 'Courier New', Courier, monospace;
+    --secondary-font: Arial, Helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/pokemon-bg.png);
+    font-family: var(--primary-font);
+    padding-bottom: 5rem;
+}
+
+header {
+    padding: 2rem;
+}
+
+.logo {
+    width: 15rem;
+    margin: auto;
+}
+
+.border {
+    border: 3px solid var(--black-color);
+    border-radius: 1rem;
+}
+
+.pokedex {
+    min-width: 30rem;
+    max-width: 38rem;
+    /* height: 60rem; */
+    background-color: var(--primary-color);
+    margin: auto;
+    border: 5px solid var(--black-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .pokedex {
+        max-width: 72rem;
+        /* 70 aqui*/
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.screen-img {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    width: 100%;
+    max-width: 33rem;
+    /*32 aqui*/
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+    .screen-img {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.gray-frame {
+    background-color: var(--gray-color);
+    padding: .5rem;
+}
+
+.bg-img {
+    background-color: var(--white-color);
+    width: 100%;
+}
+
+.frame-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 14rem;
+}
+
+.frame-img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.buttons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons div {
+    width: 7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+input[type="text"] {
+    width: 20rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 20rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--green-color);
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--green-darker);
+    color: var(--white-color);
+}
+
+.screen-text {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    width: 100%;
+    max-width: 33rem;
+    /*32 aqui*/
+}
+
+.data {
+    background-color: var(--white-color);
+    border: 3px solid var(--black-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 45rem;
+    max-height: 45rem;
+    overflow-y: scroll;
+}
+
+/* .data::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.data::-webkit-scrollbar-track {
+    background-color: #c3c3c3;
+}
+
+.data::-webkit-scrollbar-thumb {
+    background-color: #c3c3c3;
+    border-radius: 1rem;
+} */
+
+.data p {
+    font-size: 1.9rem;
+    margin: 0 0 1rem 0;
+}
+
+.title {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: #0087a9;
+}
+
+.title span {
+    color: var(--black-color);
+    font-weight: normal;
+}
+
+
+.blackFrame {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.message {
+    background-color: var(--white-color);
+    width: 90%;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 40rem;
+}
+
+@media (min-width: 768px) {
+    .message {
+        width: 40rem;
+    }
+}
+
+.message p {
+    margin-bottom: 0;
+}
+
+.psyduck {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media (min-width: 768px) {
+    .psyduck {
+        width: 25rem;
+        margin: 0 auto;
+    }
+}
+
+
+.error {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.msj {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn {
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--yellow-color);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e6b70e;
+    color: var(--white-color);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
